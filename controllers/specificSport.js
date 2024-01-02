@@ -9,7 +9,9 @@ class specificSport {
         return result;
       }
       throw "No Data Found!";
-    } catch (error) {}
+    } catch (error) {
+      throw error
+    }
   }
 
   async process(req, res) {
